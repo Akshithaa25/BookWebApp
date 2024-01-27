@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="ISO-8859-1">
+      <title>Book Application</title>
+      <link rel="stylesheet" href="css/bootstrap.css">
+   </head>
+    <style>
+        body {
+            background-image: url('libPic.jpg');
+            background-size: cover; /
+            background-position: center; 
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+        }
+
+        header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        header img {
+            width: 200px; /* Adjust the width of the logo as needed */
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+    </style>
+   <body class="container-fluid card" style="width:40rem;">
+    <header>
+        <img src="logo.png" alt="Logo">
+    </header>
+      <h2 class="text-center">Registration Details</h2>
+      <form action="register" method="post">
+         <table class="table table-hover">
+            <tr>
+               <td>Book Name</td>
+               <td><input type="text" name="bookName"></td>
+            </tr>
+            <tr>
+               <td>Book Edition</td>
+               <td><input type="text" name="bookEdition"></td>
+            </tr>
+            <tr>
+               <td>Book Price</td>
+               <td><input type="text" name="bookPrice"></td>
+            </tr>
+            <tr>
+               <td><input type="submit" value="Register"></td>
+               <td><input type="reset" value="Cancel"></td>
+            </tr>
+         </table>
+         <a href='bookList'>Book List</a>
+      </form>
+   </body>
+</html>
